@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: blueviolet;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.accordion {
+    width: 65%;
+    padding: 20px;
+    color: darkslateblue
+}
+
+.accordion .accordion-item-container {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.accordion .accordion-item-container .question {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.accordion .accordion-item-container .question::after {
+    content: '+';
+    right: 15px;
+    bottom: 2px; 
+    position: absolute;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.accordion .accordion-item-container .answer {
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 100%;
+
+    height: 0px; 
+    overflow: hidden;
+    transition: .5s;
+}
+
+.accordion .accordion-item-container.active .answer {
+    height: 100%;
+}
+
+.accordion .accordion-item-container.active .question {
+    font-size: 15px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.accordion .accordion-item-container.active .question::after {
+    content: '-';
+    font-size: 18px;
+    transition: .5s;   
+}
