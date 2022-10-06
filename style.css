@@ -29,7 +29,6 @@ h2 {
 }
 .accordion {
     width: 65%;
-    padding: 20px;
     color: darkslateblue
 }
 
@@ -37,7 +36,7 @@ h2 {
     background-color: white;
     padding: 20px;
     margin-bottom: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .accordion .accordion-item-container .question {
@@ -63,13 +62,13 @@ h2 {
 
     height: 0px; 
     overflow: hidden;
-    transition: .5s;
+     /* transition: .5s; */
 }
-
 .accordion .accordion-item-container.active .answer {
     height: 100%;
+    
 }
-
+ 
 .accordion .accordion-item-container.active .question {
     font-size: 15px;
     font-weight: 500;
