@@ -45,13 +45,14 @@ h2 {
     cursor: pointer;
     position: relative;
 }
+
 .accordion .accordion-item-container .question::after {
     content: '+';
     right: 15px;
     bottom: 2px; 
     position: absolute;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .accordion .accordion-item-container .answer {
@@ -80,3 +81,4 @@ h2 {
     font-size: 18px;
     transition: .5s;   
 }
+
